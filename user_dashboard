@@ -10,8 +10,8 @@
 
   <script>
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzAijcj7vNQID_anRwaSsSi_A3RRyWjTeCadJ-LG9Lx0ktJ48YLKraOamTuFDheO9DvTg/exec";
-    const LOGIN_URL = "Index_IT.html";
-    const TARGET_URL = "https://sites.google.com/view/itmouldmate";
+    const LOGIN_URL = "user_index.html";
+    const TARGET_URL = "https://script.google.com/macros/s/AKfycbyyfg-7E0mPjHToekiV_ZSgB2l5J4l12OaATRCAO4GLfp1flkR1C0XA9cZlP3S-VkcsaQ/exec";
 
     function checkAuth() {
       const token = localStorage.getItem("authToken");
