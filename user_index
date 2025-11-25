@@ -57,7 +57,7 @@
   </div>
 
   <script>
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz11yRb-zFzAZ--YcYaHydHfCow6xEZ2JUb_FnLc34TftadbUw1ZyTDAc98zeOigRqEew/exec";
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwAXxb9v1fCNlSphoBhwShw5qErTDj8MhlRgAsoW5lCqcjtqoWyb8uWjuBXuUczzNOn/exec";
     const DASHBOARD_URL = "https://script.google.com/macros/s/AKfycbyyfg-7E0mPjHToekiV_ZSgB2l5J4l12OaATRCAO4GLfp1flkR1C0XA9cZlP3S-VkcsaQ/exec";
 
     function login() {
