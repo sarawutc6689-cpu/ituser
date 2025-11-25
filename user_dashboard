@@ -9,7 +9,7 @@
   <p>กรุณารอสักครู่ ระบบกำลังนำท่านไปยังหน้าหลัก</p>
 
   <script>
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzAijcj7vNQID_anRwaSsSi_A3RRyWjTeCadJ-LG9Lx0ktJ48YLKraOamTuFDheO9DvTg/exec";
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwAXxb9v1fCNlSphoBhwShw5qErTDj8MhlRgAsoW5lCqcjtqoWyb8uWjuBXuUczzNOn/exec";
     const LOGIN_URL = "user_index.html";
     const TARGET_URL = "https://script.google.com/macros/s/AKfycbyyfg-7E0mPjHToekiV_ZSgB2l5J4l12OaATRCAO4GLfp1flkR1C0XA9cZlP3S-VkcsaQ/exec";
 
