@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Redirect</title>
+</head>
+<body>
+  <h2>กำลังตรวจสอบสิทธิ์...</h2>
+  <p>กรุณารอสักครู่ ระบบกำลังนำท่านไปยังหน้าหลัก</p>
+
+  <script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzAijcj7vNQID_anRwaSsSi_A3RRyWjTeCadJ-LG9Lx0ktJ48YLKraOamTuFDheO9DvTg/exec";
+    const LOGIN_URL = "Index_IT.html";
+    const TARGET_URL = "https://sites.google.com/view/itmouldmate";
+
+    function checkAuth() {
+      const token = localStorage.getItem("authToken");
+      const expireTime = localStorage.getItem("expireTime");
+
+      if (!token || !expireTime || Date.now() > parseInt(expireTime, 10)) {
+        redirectToLogin();
+        return;
+      }
+
+      fetch(SCRIPT_URL + "?action=verify&token=" + token)
+        .then(res => res.json())
+        .then(data => {
+          console.log("Verify response:", data);
+          if (data.valid) {
+            window.location.replace(TARGET_URL);
+          } else {
+            redirectToLogin();
+          }
+        })
+        .catch(err => {
+          console.error("Verify error:", err);
+          redirectToLogin();
+        });
+    }
+
+    function redirectToLogin() {
+      localStorage.clear();
+      window.location.replace(LOGIN_URL);
+    }
+
+    document.addEventListener("DOMContentLoaded", checkAuth);
+  </script>
+</body>
+</html>
+
+
